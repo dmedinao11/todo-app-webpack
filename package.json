@@ -4,13 +4,16 @@
   "description": "![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "repository": {
-    "url": ""
+    "url": "git+https://github.com/dmedinao11/todo-app-webpack"
   },
+  "homepage": "http://dmedinao11.github.io/todo-app-webpack",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "start": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +25,7 @@
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^4.5.0",
     "style-loader": "^2.0.0",
     "ts-loader": "^8.0.11",
